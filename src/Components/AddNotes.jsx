@@ -15,14 +15,17 @@ const AddNotes = ({ setNotes, notes }) => {
     }
 
     const Note = {
-      title,
-      description,
+      noteId: Date.now(),
+      title: title,
+      description: description,
     };
 
     setNotes([...notes, Note]);
     setTitle("");
     setDescription("");
   };
+
+  console.log("Notes", notes);
 
   return (
     <div>

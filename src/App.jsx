@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <AddNotes setNotes={setNotes} notes={notes} />
-      <AllNotes notes={notes} />
+      <AllNotes notes={notes} setNotes={setNotes} />
     </>
   );
 }
