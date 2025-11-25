@@ -4,10 +4,6 @@ const AddNotes = ({ setNotes, notes }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  console.log("Title:", title);
-  console.log("Description: ", description);
-  console.log(notes);
-
   const handleAddNote = () => {
     if (!title.trim() || !description.trim()) {
       alert("Please fill both title and description");
@@ -24,8 +20,6 @@ const AddNotes = ({ setNotes, notes }) => {
     setTitle("");
     setDescription("");
   };
-
-  console.log("Notes", notes);
 
   return (
     <div>

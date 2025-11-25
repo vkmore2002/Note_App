@@ -16,16 +16,17 @@ const AllNotes = ({ notes, setNotes }) => {
             description: description,
           };
         }
+        return note;
       })
     );
   };
 
   return (
     <div className="flex gap-6 flex-wrap justify-center p-6">
-      {notes.map((note, index) => {
+      {notes.map((note) => {
         return (
           <Cards
-            key={index}
+            key={note.noteId}
             note={note}
             deleteNote={deleteNote}
             editNotes={editNotes}
